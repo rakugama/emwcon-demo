@@ -8,10 +8,10 @@ Files needed for a demo of deploying mediawiki to kubernetes
 * a mysql database
 
 ## Instructions
-* docker build -t <your tag name> .
+* docker build -t (your tag name) .
 * docker push to your docker registry if needed
 * update any config values in deployment.yaml
 * kubectl apply -f deployment.yaml
-** kubectl exec -it <podname> bash
+** kubectl exec -it (podname) bash
 ** /var/config/setup.php
 * kubectl apply -f service.yaml
