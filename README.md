@@ -5,7 +5,7 @@ Files needed for a demo of deploying mediawiki to kubernetes
 * docker
 * a kubernetes cluster
 * a copy of mediawiki/core moved into this repo
-* a mysql database
+* a mysql database (it's not necessary for this to be running in kubernetes)
 
 ## Instructions
 * $ docker build -t (your tag name) .
