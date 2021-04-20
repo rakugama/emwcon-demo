@@ -11,5 +11,5 @@ WORKDIR "/var/www/html"
 COPY --chown=65533:65533 ["./core", "./"]
 RUN composer update --no-dev
 RUN mkdir -p /tmp/php
-COPY --chown=65533:65533 [".htaccess", "LocalSettings.php", "./"]
+COPY --chown=65533:65533 ["LocalSettings.php", "./"]
 COPY --chown=65533:65533 ["./setup.sh", "/var/config/setup.sh"]
